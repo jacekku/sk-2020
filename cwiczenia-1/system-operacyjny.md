@@ -7,7 +7,7 @@ Charakterystyka systemu operacyjnego
 | Charakterystyka | wartość           | komentarzu |
 | ------------- |:-------------:| -----:|
 | nazwa      | linux | centos 7 |
-| program (parametry sieci)      | niewiem |  |
+| program (parametry sieci)      | nmcli device show |  |
 
 
 Konfiguracja połączenia sieciowego
@@ -23,8 +23,4 @@ Konfiguracja połączenia sieciowego
 
 Schemat sieci
 -------------
-
-aby załączyć obrazek 
-
-
 ![alt schemat](network.png)
