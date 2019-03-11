@@ -25,17 +25,17 @@ ip
 -------------------------
 | subcommand    |  polecenie   | opis  |
 | ------------- |:-------------| :---------------| 
-|   ``addr``    |                               | informacje o adresacji i własnościach interfejsów |
+|   ``addr``    |            | informacje o adresacji i własnościach interfejsów |
 |               |   ``ip [a]ddr``                 | informacja o wszystkich interfejsach              |
 |               |   ``ip addr show dev enp0s3`` | informacja o konkretnym interfejsie               |
-|   ``link``    |                               |  |
+|              |         ``ip a [add|del] [ip] dev [int]``  | ustalanie/usuwanie statycznego ip dla interfejsu|
+|   ``link``    |   ``ip link set [int] [up|down]``                            | uruchamianie/zatrzymywanie interfejsu |
 |   ``route``   |  | |
 |   ``maddr``   |  | |
 |   ``neigh``   |  | |
 |   ``help``    |  | |
-ip a add [ip] dev [interfejs]
-ip a del [ip] dev [int]
-ip link set [int] up/down
+
+
 Zadanie
 ------------
 
