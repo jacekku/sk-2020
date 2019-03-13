@@ -88,6 +88,6 @@ Warto wiedzieć
 | Lokalizacja pliku z konfiguracją sieci| /etc/sysconfig/network-scripts/| |
 | UP -> Wyłączenie interfejsu sieciowego|ifdown [nazwa] | |
 | DOWN -> Włączenie interfejsu sieciowego|ifup [nazwa]  | |
-| Sprawdzenie obecnych parametrów | nmcli | |
+| Sprawdzenie obecnych parametrów | nmcli \| ip a | |
 | lista wszystkich interfejsów | ip a | |
 | Które interfejsy jakie porty słuchają |netstat |? |
