@@ -15,7 +15,12 @@ ip
 | ------------- |:-------------| :---------------| 
 |   ``route``    |                               | |
 |               |   ``ip route add``             | |
-
+|               |   ``ip route add default via [ip]``             |ustaw  default |
+|               |   ``ip route add [ip-to-connect] via [ip-to-route-through]``             |ustaw specyficzny adres |
+|               |   ``ip route add``             | |
+|               |   ``ip route add``             | |
+/etc/sysctl.conf
+/proc/sys/net/ipv4/ip_forward
 
 Zadanie
 ------------
