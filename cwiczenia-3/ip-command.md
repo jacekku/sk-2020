@@ -29,6 +29,7 @@ ip
 |               |   ``ip [a]ddr``                 | informacja o wszystkich interfejsach              |
 |               |   ``ip addr show dev enp0s3`` | informacja o konkretnym interfejsie               |
 |              |         ``ip a [add\|del] [ip] dev [int]``  | ustalanie/usuwanie statycznego ip dla interfejsu|
+|                 |    ``ip a flush``                | usuwanie całej konfiguracji
 |   ``link``    |   ``ip link set [int] [up\|down]``                            | uruchamianie/zatrzymywanie interfejsu |
 |   ``route``   |  | |
 |   ``maddr``   |  | |
