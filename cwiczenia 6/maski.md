@@ -1,29 +1,29 @@
 Struktura adresu IP
 -------------------
 
-```192.168.100.192```
-```255.255.255.0```
+Adres ip ```192.168.100.192```
+Maska   ```255.255.255.0```
 
 Adres sieci
 -----------
 
-1. 
-2.
-3.
+1. Adres ip do postaci binarnej
+2. Maska do postaci binarnej
+3. bitwise and binarnego ip oraz binarnej maski
 
 Adres rozgłoszeniowy
 -----------
 
-1. 
-2.
-3.
+1. Oblicz adres sieci
+2. Zaneguj maskę
+3. bitwise or negacji maski oraz adresu sieci
 
 
 Podział na równą ilość podsieci
 -------------------------------
 
 ```2^S >= n```
-
+Wyszukaj najmniejszą potęge dwójki spełniającą warunek
 Chcemy 7 -> 2^3 >= 7
 
 Maska -> 255.255.255.11100000 -> 255.255.255.224 -> /27
@@ -35,14 +35,14 @@ Wprowadzenie
 ------------------------------
 | dziesiętnie |  binarnie   | 
 | --------- |:-------------| 
-| ``10``  |  | 
-| ``92``  | | 
-| ``37``  | | 
-| ``240`` | | 
-| ``192`` | | 
-| ``255`` | | 
-| ``128`` | | 
-| ``168`` | | 
+| ``10``  |  00001010| 
+| ``92``  | 01011100| 
+| ``37``  | 00100101| 
+| ``240`` | 11110000| 
+| ``192`` | 11000000| 
+| ``255`` | 11111111| 
+| ``128`` | 10000000| 
+| ``168`` | 10101000| 
 
 
 ------------------------------
