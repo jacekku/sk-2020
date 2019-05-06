@@ -15,7 +15,9 @@ polecenia
 |```ip link set {int} down```|zatrzymuje interfejs|@|
 |```ip route```|pokazuje tablice routingu|@|
 |```ip route add default via {ip}```|ustala defaultowy adres do wysłania pakietu|@|
-|```ip route add {ip-route-to} via {ip-route-through}```|ustala trase dla adresu lub podsieci|@|
+|```ip route add {ip-route-to} via {ip-route-through}```|ustala trase dla adresu lub podsieci|
+|```iptables -t nat -A POSTROUTING -s 192.168.64.192/27 -o enp0s3 -j MASQUERADE```| ustawianie maskarady|
+
 
 
 pliki
