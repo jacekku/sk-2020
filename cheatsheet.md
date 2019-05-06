@@ -27,3 +27,5 @@ pliki
 |  /proc/sys/net/ipv4/ip_forward |ip forwarding|tymczasowe|
 |   /etc/sysctl.conf  |     ip forwarding | stałe|
 |   /etc/network/interfaces |    ustawienia interfejsów | stałe|
+|/etc/default/isc-dhcp-server|isc-dhcp-server tu ustalamy plik oraz |
+|/etc/dhcp/dhcpd.conf|konfiguracja w pliku|subnet 192.168.64.192 netmask 255.255.255.225 {option domain-name-servers 8.8.8.8, 1.1.1.1;option routers 192.168.64.193;range 192.168.64.201 192.168.64.223}|
