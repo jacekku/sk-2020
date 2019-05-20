@@ -44,6 +44,18 @@
 
 ```bash
 iptables -A -i <interface> -p <protocol (tcp/udp) -s <source> --dport <port> -j <target>
+
+
+--------------
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT          // 22 - port SSH
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A INPUT -p tcp --dport 22 -s [ip cidr] -j ACCEPT
+iptables -P INPUT DROP
+najbardziej szczegolowe na gorze, leci od gory 
+iptables-save > /etc/iptables.up.rules // zapis do pliku konfiguracji
+iptables-restore < /etc/iptables.up.rules // wczytanie z pliku
+/etc/network/interfaces -> post-up iptables-restore < /etc/iptables.up.rules
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT
 ```
 
 ### wykorzystanie
