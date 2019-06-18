@@ -24,7 +24,7 @@ Podobnie jak przy poprzednim punkcie, standardowa maska nie bedzie w stanie pomi
 ## 2 Konfiguracja sieci w VirtualBox
 
 ### 2.1 LAN1
-![lan1vb.png](LAN1VB.png)
+![lan1vb.png](./LAN1VB.png)
 
 ### 2.2 LAN2
 ![lan2vb.png](LAN2VB.png)
