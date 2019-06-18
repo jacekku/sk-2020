@@ -18,13 +18,13 @@ Standardowa maska /24 daje nam 2^8 = 256 hostów w tym adres sieci oraz broadcas
 
 #### 1.1.2 500 hostów
 Podobnie jak przy poprzednim punkcie, standardowa maska nie bedzie w stanie pomieścić wszystkich hostów. Rozpoczynając od ```172.22.160.0``` (adres o 1 wiekszy od adresu broadcast sieci ``LAN2``). Tym razem wystarczy maska /23 (32 - 23 = 9 ; 2^9 = 512). Otrzymujemy sieć `172.22.160.0/23` z adresem broadcast `172.22.161.255` [link](http://jodies.de/ipcalc?host=172.22.160.0&mask1=19&mask2=23)
-![lan1.png](./LAN1.png)
+![lan1.png](LAN1.png)
 
 ---
 ## 2 Konfiguracja sieci w VirtualBox
 
 ### 2.1 LAN1
-![lan1vb.png](./LAN1VB.png)
+![lan1vb.png](LAN1VB.png)
 
 ### 2.2 LAN2
 ![lan2vb.png](LAN2VB.png)
