@@ -14,7 +14,7 @@ W pierwszej kolejności wyliczyłem podsieć ```LAN2```
 #### 1.1.1 5000 hostów
 Standardowa maska /24 daje nam 2^8 = 256 hostów w tym adres sieci oraz broadcast. Aby uzyskac odpowiednią wielkość sieci zmieniamy maskę na /19 (32-19 = 13 -> 2^13 = 8192) w ten sposób otrzymujemy sieć ```172.22.128.0/19``` z adresem broadcast ```172.22.159.255``` 
 [link](http://jodies.de/ipcalc?host=172.22.128.0&mask1=17&mask2=19)
-![lan2.png](lan2.png)
+![lan2.png](lan2.PNG)
 
 #### 1.1.2 500 hostów
 Podobnie jak przy poprzednim punkcie, standardowa maska nie bedzie w stanie pomieścić wszystkich hostów. Rozpoczynając od ```172.22.160.0``` (adres o 1 wiekszy od adresu broadcast sieci ``LAN2``). Tym razem wystarczy maska /23 (32 - 23 = 9 ; 2^9 = 512). Otrzymujemy sieć `172.22.160.0/23` z adresem broadcast `172.22.161.255` [link](http://jodies.de/ipcalc?host=172.22.160.0&mask1=19&mask2=23)
