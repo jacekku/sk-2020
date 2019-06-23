@@ -64,35 +64,58 @@ maska /26 zapewnia nam 62 adresy hostów na każdą salę.
 ### Main Router
 #### Interfejsy
 polecenie `ip a`
+
 ![MR_ipa.png](MR_ipa.png)
 
 #### Routing
 polecenie `ip route`
+
 ![MR_routing.png](MR_routing.png)
 #### Maskarady
 polecenie `iptables -t nat -L`
+
 ![MR_masquerade.png](MR_masquerade.png)
+#### Serwer DHCP dla sieci LAN
+polecenia 
+
+`apt-get install isc-dhcp-server`
+
+`systemctl start isc-dhcp-server`
+
+pliki 
+
+`/etc/default/isc-dhcp-server`
+
+`/etc/dhcp/dhcpd.conf`
+
+![MR_dhcp.png](MR_dhcp.png)
 
 ### LAN router
 #### Interfejsy
 polecenie `ip a`
+
 ![LR_ipa.png](LR_ipa.png)
 
 #### Routing
 polecenie `ip route`
+
 ![LR_routing.png](LR_routing.png)
 #### Maskarady
 polecenie `iptables -t nat -L`
+
 ![LR_masquerade.png](LR_masquerade.png)
 
 ### K01
 #### Interfejsy
 polecenie `ip a`
+
 ![K01_ipa.png](K01_ipa.png)
 
 #### Routing
 polecenie `ip route`
+
 ![K01_routing.png](K01_routing.png)
 #### Statyczny ip na interfejs
 plik `/etc/network/interfaces`
+
 ![K01_static_interface.png](K01_static_interface.png)
