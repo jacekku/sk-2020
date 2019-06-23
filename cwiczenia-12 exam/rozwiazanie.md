@@ -45,5 +45,54 @@ maska /26 zapewnia nam 62 adresy hostów na każdą salę.
 
 204 - `10.0.204.0/26`
 
-## Schemat
+## Diagram
 ![diagram](diagram.png)
+
+### Diagram w programie GNS3
+![diagram_working](diagram_working.png)
+
+
+
+## Konfiguracja
+* Wszystkie routery mają ustawiony ip forwarding w pliku `/etc/sysctl.conf`
+
+* Ustawianie ip na interfejs `ip a add {ip} dev {interfejs}`
+* Ustawianie maskarady `iptables -t nat -A POSTROUTING -s {ip obslugiwanej sieci} -o {interfejs wyjsciowy} -j MASQUERADE`
+* Ustawianie routingu default `ip route add default via {ip}`
+
+
+### Main Router
+#### Interfejsy
+polecenie `ip a`
+![MR_ipa.png](MR_ipa.png)
+
+#### Routing
+polecenie `ip route`
+![MR_routing.png](MR_routing.png)
+#### Maskarady
+polecenie `iptables -t nat -L`
+![MR_masquerade.png](MR_masquerade.png)
+
+### LAN router
+#### Interfejsy
+polecenie `ip a`
+![LR_ipa.png](LR_ipa.png)
+
+#### Routing
+polecenie `ip route`
+![LR_routing.png](LR_routing.png)
+#### Maskarady
+polecenie `iptables -t nat -L`
+![LR_masquerade.png](LR_masquerade.png)
+
+### K01
+#### Interfejsy
+polecenie `ip a`
+![K01_ipa.png](K01_ipa.png)
+
+#### Routing
+polecenie `ip route`
+![K01_routing.png](K01_routing.png)
+#### Statyczny ip na interfejs
+plik `/etc/network/interfaces`
+![K01_static_interface.png](K01_static_interface.png)
