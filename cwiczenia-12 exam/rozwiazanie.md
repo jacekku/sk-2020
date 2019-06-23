@@ -44,7 +44,6 @@ maska /26 zapewnia nam 62 adresy hostów na każdą salę.
 203 - `10.0.203.0/26`
 
 204 - `10.0.204.0/26`
-<<<<<<< HEAD
 
 ## Schemat
 ![diagram](diagram.png)
