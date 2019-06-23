@@ -1,4 +1,4 @@
-v# Wykonane kroki
+# Wykonane kroki
 
 ## 1 Obliczenie podsieci
 
