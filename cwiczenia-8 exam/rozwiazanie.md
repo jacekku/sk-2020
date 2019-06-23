@@ -66,4 +66,4 @@ konfiguracja net.ipv4.ip_forward
 ![PC2R.png](PC2R.PNG)
 
 ## 6 Diagram
-![diagram.png](diagram.PNG)
+![diagram.png](diagram.png)
