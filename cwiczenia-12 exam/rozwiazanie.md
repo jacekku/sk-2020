@@ -17,8 +17,9 @@ aby można było użyć odpowiadających adresów sieci dla laboratoriów np:
 maska /26 zapewnia nam 62 adresy hostów na każdą salę.
 
 ## SALE
-### Parter
 ---
+### Parter
+
 009 - `10.0.9.0/26`
 
 013 - `10.0.13.0/26`
@@ -26,8 +27,10 @@ maska /26 zapewnia nam 62 adresy hostów na każdą salę.
 014 - `10.0.14.0/26`
 
 017 - `10.0.17.0/26`
-### Piętro 1
+
 ---
+### Piętro 1
+
 115 - `10.0.115.0/26`
 
 116 - `10.0.116.0/26`
@@ -35,8 +38,11 @@ maska /26 zapewnia nam 62 adresy hostów na każdą salę.
 117 - `10.0.117.0/26`
 
 122 - `10.0.122.0/26`
-### Piętro 2
+
 ---
+
+### Piętro 2
+
 201 - `10.0.201.0/26`
 
 202 - `10.0.202.0/26`
@@ -44,6 +50,8 @@ maska /26 zapewnia nam 62 adresy hostów na każdą salę.
 203 - `10.0.203.0/26`
 
 204 - `10.0.204.0/26`
+
+---
 
 ## Diagram
 ![diagram](diagram.png)
@@ -60,7 +68,7 @@ maska /26 zapewnia nam 62 adresy hostów na każdą salę.
 * Ustawianie maskarady `iptables -t nat -A POSTROUTING -s {ip obslugiwanej sieci} -o {interfejs wyjsciowy} -j MASQUERADE`
 * Ustawianie routingu default `ip route add default via {ip}`
 
-
+---
 ### Main Router
 #### Interfejsy
 polecenie `ip a`
@@ -90,7 +98,9 @@ pliki
 
 ![MR_dhcp.png](MR_dhcp.png)
 
+---
 ### LAN router
+
 #### Interfejsy
 polecenie `ip a`
 
@@ -105,6 +115,7 @@ polecenie `iptables -t nat -L`
 
 ![LR_masquerade.png](LR_masquerade.png)
 
+---
 ### K01
 #### Interfejsy
 polecenie `ip a`
