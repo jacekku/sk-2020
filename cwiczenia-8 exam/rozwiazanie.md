@@ -64,3 +64,6 @@ konfiguracja net.ipv4.ip_forward
 ![PC2IPA.png](PC2IPA.PNG)
 ### 5.3 Routing
 ![PC2R.png](PC2R.PNG)
+
+## 6 Diagram
+![diagram.png](diagram.PNG)
