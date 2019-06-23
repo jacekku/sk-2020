@@ -1,7 +1,7 @@
 # Rozwiązanie
 ## WiFi
 
-siec wifi ma pomiescic 800 hostow wiec potrzebujemy maski /22 (conajmniej, ja bym dał wiecej hostów na wszelki wypadek)
+siec wifi ma pomiescic 800 hostow wiec potrzebujemy maski /22
 
 `192.168.0.0/22`
 
