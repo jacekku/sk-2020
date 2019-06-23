@@ -41,7 +41,7 @@ Podobnie jak przy poprzednim punkcie, standardowa maska nie bedzie w stanie pomi
 ![PC0IPA.png](PC0IPA.PNG)
 
 ### 3.5 IP Forwarding
-plik /etc/sysctl.conf
+plik `/etc/sysctl.conf`
 
 konfiguracja net.ipv4.ip_forward
 ![PC0IPA.png](PC0IPFOR.PNG)
@@ -54,3 +54,13 @@ konfiguracja net.ipv4.ip_forward
 ### 4.2 ip a
 ![PC1IPA.png](PC1IPA.PNG)
 ### 4.3 Routing
+![PC1R.png](PC1R.png)
+
+---
+## 5 Konfiguracja PC2
+### 5.1 Połączenie z LAN2
+![PC2K1.png](PC2K1.PNG)
+### 5.2 ip a
+![PC2IPA.png](PC2IPA.PNG)
+### 5.3 Routing
+![PC2R.png](PC2R.PNG)
