@@ -83,7 +83,7 @@ polecenie `ip route`
 polecenie `iptables -t nat -L`
 
 ![MR_masquerade.png](MR_masquerade.png)
-#### Serwer DHCP dla sieci LAN
+#### Serwer DHCP dla sieci WiFi
 polecenia 
 
 `apt-get install isc-dhcp-server`
